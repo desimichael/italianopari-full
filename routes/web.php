@@ -13,21 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Home Page
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages/home');
 });
-// Route::get('/', function () {
-//     return view('menu');
-// });
-// Route::get('/', function () {
-//     return view('happenings');
-// });
-// Route::get('/', function () {
-//     return view('private-events');
-// });
-// Route::get('/', function () {
-//     return view('location');
-// });
-// Route::get('/', function () {
-//     return view('reservations');
-// });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
