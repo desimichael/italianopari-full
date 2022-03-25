@@ -14,9 +14,62 @@ use Illuminate\Support\Facades\Route;
 */
 
 
+// Admin Authentication
+
+
+
+// Admin Dashboard
+
+
+// Admin Food Categories Dinner, Brunch, Lunch
+
+
+
+// Admin Settings
+
+
+
+// Admin Reservations
+
+
+
+
+// Admin Users 
+
+
+
+// Admin Members
+
+
+
+
+
+
+
 // Home Page
 Route::get('/', function () {
     return view('pages/home');
+});
+Route::get('/menu', function () {
+    return view('pages/menu');
+});
+Route::get('/private', function () {
+    return view('pages/private');
+});
+Route::get('/reservations', function () {
+    return view('pages/reservations');
+});
+Route::get('/press', function () {
+    return view('pages/press');
+});
+Route::get('/events', function () {
+    return view('pages/events');
+});
+Route::get('/about', function () {
+    return view('pages/about');
+});
+Route::get('/rooftop', function () {
+    return view('pages/rooftop');
 });
 
 Route::get('/dashboard', function () {

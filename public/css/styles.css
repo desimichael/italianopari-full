@@ -6734,6 +6734,115 @@ progress {
   }
 }
 body {
-  background: green;
+  background: white;
+}
+
+.header {
+  background: black;
   color: white;
+  padding: 15px 0px;
+  line-height: 1;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.header__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  color: white;
+  text-decoration: none;
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+.header__logo:hover {
+  color: white;
+}
+.header__bottom-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.header__bottom-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+.header .nav-link {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 2px 5px;
+  border-right: 1px solid white;
+  transition: all 0.2 ease-in-out;
+}
+.header .nav-link:hover {
+  color: green;
+}
+.header .nav-link:nth-last-child(1) {
+  padding-right: 0rem;
+  border-right: none;
+}
+.header__bottom-socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__bottom-socials .social-link {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.2 ease-in-out;
+}
+.header__bottom-socials .social-link:hover {
+  background: green;
+}
+.header__bottom-socials .social-link i {
+  color: white;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #000000;
+  overflow: hidden;
+}
+.hero__bg-image {
+  position: absolute;
+  background-image: url("https://images.pexels.com/photos/3296274/pexels-photo-3296274.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.hero__bg-video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transform: scale(1.3);
+}
+.hero__transparent-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 2;
 }

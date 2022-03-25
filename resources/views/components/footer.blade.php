@@ -1,3 +1,5 @@
 <footer>
-  <h1>Footer</h1>
+  <a href="/" class="footer__logo">
+    Italianopari
+  </a>
 </footer>
