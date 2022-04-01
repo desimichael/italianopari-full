@@ -54,7 +54,7 @@ Route::get('/menu', function () {
     return view('pages/menu');
 });
 Route::get('/private', function () {
-    return view('pages/private');
+    return view('pages/private-dinings');
 });
 Route::get('/reservations', function () {
     return view('pages/reservations');
